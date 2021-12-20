@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Function</title>
+    </head>
+    <body>
+        <script>
+             var arr = [];
+            while(arr.length < 100)
+            {
+                 var r = Math.floor(Math.random() * 1000) + 1;
+                    if(arr.indexOf(r) === -1) arr.push(r);
+            }
+                document.write(arr);
+                document.write("<br>");
+                document.write(arr.sort());
+                document.write("<br>");
+                document.write("The smallest number in the array is:"+arr[0]);
+                document.write("<br>");
+                document.write("The largest number in the array is:"+arr[99]);
+                document.write("<br>");
+                var sum=0;
+                for(var i=0;i<arr.length;i++)
+                {
+                    sum=sum+arr[i];
+                }
+                document.write("The sum of the array is:"+sum);
+                document.write("<br>");
+                document.write("The average of the sum of  array is:"+sum/100);
+                document.write("<br>");
+                </script>
+                </body>
+</html>

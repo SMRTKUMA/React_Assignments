@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor</title>
+  </head>
+  <body>
+    <div class="Currency-Convertor" onload="convertFunction()">
+      
+      <input
+        type="text"
+        id="convert-from"
+        size="10"
+        value="0"
+        onchange="convertFunction()"
+      />
+      <select id="select-from" onchange="convertFunction()">
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+      </select>
+
+      <br /><br />
+      <input type="text" id="convert-to" size="10" value="0" />
+      <select id="select-to" onchange="convertFunction()">
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+    <script src="a72.js"></script>
+  </body>
+</html>

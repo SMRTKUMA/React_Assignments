@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Question3</title>
+    </head>
+    
+    <body>
+        <input id="val">
+        <input type="Submit" onclick="run();">
+        <p id="results"></p>
+    </body>
+    <script>
+        function run(){
+    val = document.getElementById("val").value;
+    document.getElementById("results").innerHTML=val+" is  "+evenOdd(val)+" Number";
+    }
+  function evenOdd(N) {
+    
+          if(N%2==0)
+          {
+            return "Even";
+          }
+          else
+          return "Odd";
+        
+        }
+    </script>
+    
+</html>

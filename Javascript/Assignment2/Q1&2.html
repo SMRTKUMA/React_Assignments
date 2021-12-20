@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compose of function</title>
+</head>
+<body>
+    <script>
+            function double(x)
+            {
+                return x = x * 2;
+            } 
+            function square(x)
+            {
+                return x = x * x;
+            }
+            function compose(fn1,fn2,x)
+            {
+               return fn2(fn1(x));
+            }
+            var output=compose(double,square,2);
+            //Question 2
+            var output1=compose(square,double,2);
+            document.write(output+"<br>");
+            document.write(output1);
+        
+            
+    </script>
+</body>
+</html>

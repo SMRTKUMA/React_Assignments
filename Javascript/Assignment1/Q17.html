@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rotate</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4,5,6]
+        var res=rotate1(arr,2)
+        function rotate1(nums, k) {
+        k = k % nums.length;
+        for (let i = 0; i < k; i++) {
+            var back = nums.pop();
+            nums.unshift(back);
+        }
+        return nums;
+        }
+        document.write(res);
+    </script>
+</body>
+</html>

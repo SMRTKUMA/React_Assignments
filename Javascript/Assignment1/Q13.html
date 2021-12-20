@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of array</title>
+    </head>
+    <body>
+        <script>
+             var arr = [];
+            while(arr.length < 8)
+            {
+                 var r = Math.floor(Math.random() * 100) + 1;
+                    if(arr.indexOf(r) === -1) arr.push(r);
+            }
+                document.write(arr);
+                document.write("<br>");
+                var fsum=0;
+                var wsum=0;
+                var dsum=0;
+                var j=0;
+                var k=0;
+                //Using for loop
+                for( i=0;i<arr.length;i++)
+                {
+                    fsum=fsum+arr[i];
+                }
+                document.write("Sum using for loop:"+fsum);
+                document.write("<br>");
+                //using while loop
+                while(j<arr.length)
+                {
+                    wsum=wsum+arr[j];
+                    j++;
+                }
+                document.write("Sum using while loop:"+wsum);
+                document.write("<br>");
+                do
+                {
+                    dsum=dsum+arr[k];
+                    k++;
+                }
+                while(k<arr.length)
+                document.write("Sum using do while loop:"+dsum);
+                document.write("<br>");
+        </script>
+    </body>
+</html>
